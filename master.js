@@ -16,7 +16,7 @@ var divide = document.querySelector("#divide");
 var dot = document.querySelector("#dot");
 var deleteButton = document.querySelector("#delete");
 var equal = document.querySelector("#equal");
-var output = document.querySelector("#output");
+var output = document.querySelector("#answer");
 
 var outputStorage = "";
 
