@@ -1,0 +1,123 @@
+body{
+    
+    font-family: 'Orbitron', sans-serif;
+    background-color: #818181;
+ 
+    padding: 0px;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#calculator-face{
+    margin: 20% auto;
+    width: 310px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+
+#calculator{
+    margin: 20% auto;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 2px 14px white;
+    background-color: rgb(202, 199, 199);
+    
+}
+
+#calculator h4{
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+#display{
+    margin: 20px;
+    width: 90%;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(212, 212, 211);
+    height: 70px;
+}
+#buttons{
+    
+    margin: 20px;
+    text-align: auto;
+    
+}
+button{
+    height: 40px;
+    box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+    background-color: #464545;
+    color:white;
+    font-size: 15px;
+    width: 50px;
+    margin: 5px;
+    vertical-align: middle;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#equal{
+    height: 90px;
+    float: right;
+    margin-left: px;
+    position: relative;
+    left: -7px;
+}
+
+#n0{
+    width: 115px;
+}
+
+#delete{
+    width: 115px;
+}
+
+.red{
+    background-color: #671c2a;
+    box-shadow: 0px 3px 0px 0px #671c2a;
+}
+
+button:active{
+    transform: translate(0px,3px);
+}
+
+#display{
+    text-align: right;
+    
+}
+
+#entry{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#previous{
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+#entry{
+    font-size: 30px;
+    position: relative;
+    
+}
+
+#previous{
+    font-size: 15px;
+}
+
+footer{
+    margin-bottom: 20px;
+    position: relative;
+    top: -50px;
+}
+
+a, a:active,a:hover{
+    color: #671c2a;
+    text-decoration: none;
+}

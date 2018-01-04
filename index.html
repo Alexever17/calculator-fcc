@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    
         <meta charset="UTF-8">
         <meta name="description" content="This is light calculator with a basic functionality. It is a learning project for FreeCodeCamps curriculum.">
         <meta name="keywords" content="calculator, freecodecamp, fcc, Everistus Olumese, Oleksandr Malakhov, alexxever17">
@@ -9,17 +10,54 @@
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.gif" type="image/gif" sizes="16x16">
-    </head>
-    <body>
-        <header>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    
+</head>
+<body>
+    <div id ="calculator-face">
+        <div id="calculator">
+            <h4>ELECTRONIC CALCULATOR</h4>
 
-        </header>
-        <main>
+            <div id="display">
+                <div id='entry'>
+                    <p id='answer'>0</p>
+                  </div>
+                  <div id='previous'>
+                    <p>0</p>
+                  </div>
+            </div>
 
-        </main>
-        <footer>
+            <div id="buttons">
+                
+                <button id="delete" class="red" value="ce">CE</button>
+                <button id="divide" value="/">&divide;</button>
+                <button id="multiply" value="*">x</button>
+                <button id="n7" value="7">7</button>
+                <button id="n8" value="8">8</button>
+                <button id="n9" value="9">9</button>
+                <button id="minus" value="-">-</button>
+                <button id="n6" value="6">6</button>
+                <button id="n5" value="5">5</button>
+                <button id="n4" value="4">4</button>
+                <button id="plus" value="+">+</button>
+                <button id="n3" value="3">3</button>
+                <button id="n2" value="2">2</button>
+                <button id="n1" value="1">1</button>
+                <button id="equal" value="=">=</button>
+                <button id="n0" value="0">0</button>
+                <button id="." value=".">.</button>
 
-        </footer>
-        <script type="text/javascript" src="master.js"></script>
-    </body>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        Designer:  <a href="http://github.com/byteniaja">Everistus Olumese</a> & 
+        Programmer:   <a href="http://github.com/Alexever17">Oleksandr Malakhov</a>
+    </footer>
+
+    <script type="text/javascript" src="master.js"></script>
+</body>
 </html>
