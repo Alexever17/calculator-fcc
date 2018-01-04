@@ -49,55 +49,123 @@ function numberClick(n) {
 }
 
 function mathClick(id) {
+    var check = false;
+
     switch(id) {
     case 0:
-        numberCheck();
-        outputStorage += "+";
-        print();
+        check = numberCheck();
+        if (check) {
+            outputStorage += "+";
+            print();
+        }
         break;
     case 1:
-        numberCheck();
-        outputStorage += "-";
-        print();
+        check = numberCheck();
+        if (check) {
+            outputStorage += "-";
+            print();
+        }
         break;
     case 2:
-        numberCheck();
-        outputStorage += "*";
-        print();
+        check = numberCheck();
+        if (check) {
+            outputStorage += "*";
+            print();
+        }
         break;
     case 3:
-        numberCheck();
-        outputStorage += "/";
-        print();
+        check = numberCheck();
+        if (check) {
+            outputStorage += "/";
+            print();
+        }
         break;
     }
 }
 
 function numberCheck() {
-    var check = outputStorage.slice(-1);
-    if (/[0-9]/.test(check)) {
-        console.log(check);
+    var object = outputStorage.slice(-1);
+    if (/[0-9]/.test(object)) {
+        return true;
     } else {
-        console.log("fuck");
+        return false;
     }
 }
 
 function dotClick() {
-
+    check = numberCheck();
+    if (check) {
+        outputStorage += ".";
+        print();
+    }
 }
 
 function deleteClick() {
-    console.log("hy");
     outputStorage = "";
     print();
 }
 
 function equalClick() {
+    var numbers = [];
+    var numberCount = 0;
+    var characters = [];
+    var characterCount = 0;
+    var throughput = outputStorage;
+    var char = 0;
 
+    check = numberCheck();
+    if (!check) {
+        throughput = throughput.slice(0,-1);
+    }
+
+    for (var i = 0; throughput.length > 0; i++) {
+        char = throughput.search(/[^0-9]/);
+        if (char == -1) {
+            numbers[numberCount] = throughput.slice(0);
+            break;
+        } else {
+            numbers[numberCount] = throughput.slice(0, char);
+            numberCount += 1;
+            throughput = throughput.slice(char);
+        }
+        characters[characterCount] = throughput.slice(0, 1);
+        characterCount += 1;
+        throughput = throughput.slice(1);
+    }
+    if (characters[(characterCount-1)] == "") {
+        characters.splice(0, -1);
+    }
+    computations(numbers, characters);
+}
+
+function computations(numbers, characters) {
+    var solvednumber = 0;
+    while (numbers.length > 1) {
+        numbers[0] = Number(numbers[0]);
+        numbers[1] = Number(numbers[1]);
+        if (characters[0] == "+") {
+            numbers[1] = numbers[0] + numbers[1];
+        } else if (characters[0] == "-") {
+            numbers[1] = numbers[0] - numbers[1];
+        } else if (characters[0] == "*") {
+            numbers[1] = numbers[0] * numbers[1];
+        } else if (characters[0] == "/") {
+            numbers[1] = numbers[0] / numbers[1];
+        } else {
+            numbers[1] = numbers[0] + "." + numbers[1];
+            numbers[1] = Number(numbers[1]);
+        }
+        numbers.shift();
+        characters.shift();
+    }
+    solvednumber = (Math.round(numbers[0]*100000)/100000);
+    outputStorage = solvednumber.toString();
+    print();
+    console.log(outputStorage);
 }
 
 function print() {
-    if (outputStorage.length > 60) {
+    if (outputStorage.length > 10) {
         output.innerHTML = "Number Overflow";
     } else if(outputStorage == ""){
         output.innerHTML = "0";
