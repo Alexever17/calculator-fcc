@@ -94,6 +94,8 @@ button:active{
 #entry{
     margin-right: 10px;
     margin-top: 5px;
+    font-size: 25px;
+    position: relative;
 }
 
 #previous{
@@ -101,11 +103,6 @@ button:active{
     margin-top: -20px;
 }
 
-#entry{
-    font-size: 30px;
-    position: relative;
-    
-}
 
 #previous{
     font-size: 15px;
