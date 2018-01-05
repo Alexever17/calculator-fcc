@@ -165,9 +165,7 @@ function computations(numbers, characters) {
 }
 
 function print() {
-    if (outputStorage.length > 10) {
-        output.innerHTML = "Number Overflow";
-    } else if(outputStorage == ""){
+    if(outputStorage == ""){
         output.innerHTML = "0";
     } else {
         output.innerHTML = outputStorage;
