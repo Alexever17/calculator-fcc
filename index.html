@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
         <meta charset="UTF-8">
         <meta name="description" content="This is light calculator with a basic functionality. It is a learning project for FreeCodeCamps curriculum.">
         <meta name="keywords" content="calculator, freecodecamp, fcc, Everistus Olumese, Oleksandr Malakhov, alexxever17">
@@ -10,54 +10,52 @@
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.gif" type="image/gif" sizes="16x16">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
 </head>
 <body>
-    <div id ="calculator-face">
+    <header>
+        <h1>Basic TR1000</h1>
+    </header>
+    <main>
         <div id="calculator">
-            <h4>ELECTRONIC CALCULATOR</h4>
-
             <div id="display">
-                <div id='entry'>
-                    <p id='answer'>0</p>
-                  </div>
-                  <div id='previous'>
-                    <p>0</p>
-                  </div>
+                <div id="entry" class="row">
+                    <button id="delete" value="ce" class="outline">CE</button>
+                    <h2 id="answer" class="outline">0</h2>
+                </div>
             </div>
-
             <div id="buttons">
-                
-                <button id="delete" class="red" value="ce">CE</button>
-                <button id="divide" value="/">&divide;</button>
-                <button id="multiply" value="*">x</button>
-                <button id="n7" value="7">7</button>
-                <button id="n8" value="8">8</button>
-                <button id="n9" value="9">9</button>
-                <button id="minus" value="-">-</button>
-                <button id="n6" value="6">6</button>
-                <button id="n5" value="5">5</button>
-                <button id="n4" value="4">4</button>
-                <button id="plus" value="+">+</button>
-                <button id="n3" value="3">3</button>
-                <button id="n2" value="2">2</button>
-                <button id="n1" value="1">1</button>
-                <button id="equal" value="=">=</button>
-                <button id="n0" value="0">0</button>
-                <button id="dot" value=".">.</button>
-
+                <div class="row">
+                    <button id="n7" value="7" class="outline">7</button>
+                    <button id="n8" value="8" class="outline">8</button>
+                    <button id="n9" value="9" class="outline">9</button>
+                    <button id="plus" value="+" class="outline">+</button>
+                </div>
+                <div class="row">
+                    <button id="n4" value="4" class="outline">4</button>
+                    <button id="n5" value="5" class="outline">5</button>
+                    <button id="n6" value="6" class="outline">6</button>
+                    <button id="minus" value="-" class="outline">-</button>
+                </div>
+                <div class="row">
+                    <button id="n1" value="1" class="outline">1</button>
+                    <button id="n2" value="2" class="outline">2</button>
+                    <button id="n3" value="3" class="outline">3</button>
+                    <button id="multiply" value="*" class="outline">x</button>
+                </div>
+                <div class="row">
+                    <button id="n0" value="0" class="outline">0</button>
+                    <button id="dot" value="." class="outline">.</button>
+                    <button id="equal" value="=" class="outline">=</button>
+                    <button id="divide" value="/" class="outline">&divide;</button>
+                </div>
             </div>
         </div>
-
-        
-    </div>
-
+    </main>
     <footer>
-        Designer:  <a href="http://github.com/byteniaja">Everistus Olumese</a> & 
-        Programmer:   <a href="http://github.com/Alexever17">Oleksandr Malakhov</a>
+        Made by: <a href="http://github.com/Alexever17">Oleksandr Malakhov</a> with the help of: <a href="http://github.com/byteniaja">Everistus Olumese</a>
     </footer>
-
     <script type="text/javascript" src="master.js"></script>
 </body>
 </html>
