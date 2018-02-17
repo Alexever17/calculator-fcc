@@ -18,16 +18,13 @@ main {
   height: 70vh;
   text-align: center;
   border: 1px groove white;
-  -webkit-box-shadow: 1px 1px 5px white inset, -1px -1px 5px white inset;
-          box-shadow: 1px 1px 5px white inset, -1px -1px 5px white inset;
-  background: -webkit-gradient(linear, left top, left bottom, from(#d991f1), color-stop(0%, #c57fed), to(#5f64ff));
+  box-shadow: 1px 1px 5px white inset, -1px -1px 5px white inset;
   background: linear-gradient(top, #d991f1 0%, #c57fed 0%, #5f64ff 100%);
 }
 
 button {
   outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   line-height: 0;
   width: 25%;
@@ -45,13 +42,11 @@ button:hover {
 }
 
 button:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 #answer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: right;
   padding-right: 2vw;
   line-height: 14vh;
@@ -65,17 +60,12 @@ button:active {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .outline {
-  -webkit-box-shadow: 1px 0px white inset, 0px -1px white inset;
-          box-shadow: 1px 0px white inset, 0px -1px white inset;
+  box-shadow: 1px 0px white inset, 0px -1px white inset;
 }
 
 footer {
@@ -88,9 +78,9 @@ footer {
   font-weight: bold;
   margin: 20px 0 20px 0;
 }
+
 footer a {
   color: white;
   font-weight: normal;
 }
-
 /*# sourceMappingURL=style.css.map */
